@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Hari ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .letter-page {
+            display: none;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .letter-page.active {
+            display: block;
+        }
+
+        .letter-text {
+            line-height: 1.8;
+            color: #dddddd;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .page-number {
+            color: #b9a4ff;
+            font-size: 13px;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .next-button {
+            margin-top: 10px;
+        }
+
+        .why-you-section {
+            display: none;
+            margin-top: 50px;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .why-you-section.active {
+            display: block;
+        }
+
+        .reason-card {
+            padding: 22px;
+            margin: 18px 0;
+            border: 1px solid #a78bfa;
+            border-radius: 20px;
+            background: rgba(167, 139, 250, 0.08);
+            transition: 0.3s;
+        }
+
+        .reason-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(167, 139, 250, 0.3);
+        }
+
+        .reason-card h2 {
+            color: white;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .reason-card p {
+            color: #ccccdd;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .final-page {
+            display: none;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .final-page.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- START PAGE -->
+
+    <div id="startPage">
+
+        <div class="small-text">
+            A LITTLE SURPRISE FOR YOU
+        </div>
+
+        <h1>
+            Happy Birthday, Hari 🎂
+        </h1>
+
+        <h2>
+            There is something I want to tell you ❤️
+        </h2>
+
+        <p>
+            Maybe you've already guessed it...
+            but I still want you to read it.
+        </p>
+
+        <button onclick="openLetter()">
+            OPEN YOUR LETTER 💌
+        </button>
+
+    </div>
+
+
+    <!-- LETTER -->
+
+    <div id="letter" style="display:none;">
+
+        <!-- PAGE 1 -->
+
+        <div class="letter-page active" id="page1">
+
+            <div class="page-number">
+                01 / OUR STORY
+            </div>
+
+            <h1>
+                Dear Hari,
+            </h1>
+
+            <p class="letter-text">
+
+                I honestly don't know how to explain how you became
+                such an important part of my life.
+
+                <br><br>
+
+                We met unexpectedly, but somehow it felt like
+                we were supposed to meet.
+
+                <br><br>
+
+                Everything happened so quickly.
+                We connected almost immediately, and before we even
+                properly said "I love you", somehow we already knew
+                what we felt.
+
+            </p>
+
+            <button onclick="nextPage(2)">
+                NEXT ❤️
+            </button>
+
+        </div>
+
+
+        <!-- PAGE 2 -->
+
+        <div class="letter-page" id="page2">
+
+            <div class="page-number">
+                02 / HOW IT STARTED
+            </div>
+
+            <h1>
+                It was unexpected.
+            </h1>
+
+            <p class="letter-text">
+
+                I never expected to fall for someone so quickly.
+
+                <br><br>
+
+                But with you, everything felt different.
+                It wasn't something I planned.
+                It just happened.
+
+                <br><br>
+
+                And somehow, what started so suddenly
+                became something very real and serious to me.
+
+                <br><br>
+
+                I didn't expect you to become this important to me,
+                but I'm really glad you did.
+
+            </p>
+
+            <button onclick="nextPage(3)">
+                NEXT 💜
+            </button>
+
+        </div>
+
+
+        <!-- PAGE 3 -->
+
+        <div class="letter-page" id="page3">
+
+            <div class="page-number">
+                03 / WHEN WE NEEDED EACH OTHER
+            </div>
+
+            <h1>
+                You made things feel okay.
+            </h1>
+
+            <p class="letter-text">
+
+                There was a time when I wasn't really okay.
+
+                <br><br>
+
+                And you came into my life during that time.
+                You somehow made things feel calmer.
+                You became someone I could feel comfortable with.
+
+                <br><br>
+
+                And the funny thing is, you weren't completely okay
+                either.
+
+                <br><br>
+
+                We both had our own struggles,
+                but somehow we found comfort in each other.
+
+            </p>
+
+            <button onclick="nextPage(4)">
+                NEXT 🥹
+            </button>
+
+        </div>
+
+
+        <!-- PAGE 4 -->
+
+        <div class="letter-page" id="page4">
+
+            <div class="page-number">
+                04 / FRUIT BEA
+            </div>
+
+            <h1>
+                Our first date. 🍫
+            </h1>
+
+            <p class="letter-text">
+
+                I'll always remember our first date at Fruit Bea.
+
+                <br><br>
+
+                Just us, spending time together and eating chocolate.
+                It may sound like such a simple memory,
+                but for me, it meant so much.
+
+                <br><br>
+
+                That was one of those moments when I realized
+                just how much I cared about you.
+
+            </p>
+
+            <button onclick="nextPage(5)">
+                NEXT ✨
+            </button>
+
+        </div>
+
+
+        <!-- PAGE 5 -->
+
+        <div class="letter-page" id="page5">
+
+            <div class="page-number">
+                05 / WHAT YOU MEAN TO ME
+            </div>
+
+            <h1>
+                I love you so much. ❤️
+            </h1>
+
+            <p class="letter-text">
+
+                I know you love me too, and that means more to me
+                than I can properly explain.
+
+                <br><br>
+
+                I love the way our story happened.
+                I love that neither of us planned it.
+                Somehow, we just found each other.
+
+                <br><br>
+
+                What started unexpectedly became something
+                very special to me.
+
+                <br><br>
+
+                And when I think about my future,
+                I want you to be a part of it.
+
+                <br><br>
+
+                One day, I want to marry you.
+
+                <br><br>
+
+                Maybe we really were meant to meet.
+
+            </p>
+
+            <button onclick="showWhyYou()">
+                THERE'S MORE 💜
+            </button>
+
+        </div>
+
+
+        <!-- WHY YOU SECTION -->
+
+        <div class="why-you-section" id="whyYou">
+
+            <div class="small-text">
+                A LITTLE MORE ❤️
+            </div>
+
+            <h1>
+                WHY YOU? 💜
+            </h1>
+
+            <p class="letter-text">
+                There are so many little things I love about you.
+                Here are just a few.
+            </p>
+
+
+            <div class="reason-card">
+
+                <h2>
+                    💜 You understand me
+                </h2>
+
+                <p>
+                    You make me feel like I can simply be myself
+                    without having to explain everything.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <h2>
+                    🌙 You bring me calm
+                </h2>
+
+                <p>
+                    Even on difficult days, having you in my life
+                    makes things feel a little easier.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <h2>
+                    ✨ You made ordinary moments special
+                </h2>
+
+                <p>
+                    Some of my favorite memories are the simple
+                    moments we shared.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <h2>
+                    🍫 Fruit Bea
+                </h2>
+
+                <p>
+                    I'll always remember our first date at Fruit Bea,
+                    eating chocolate and realizing how much
+                    you meant to me.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <h2>
+                    🫶 Our story
+                </h2>
+
+                <p>
+                    I never expected our story to begin the way
+                    it did, but I'm really glad it happened.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <h2>
+                    ♾️ And simply... you
+                </h2>
+
+                <p>
+                    Out of all the people I could have met,
+                    I'm grateful that I met you.
+                </p>
+
+            </div>
+
+
+            <button onclick="finalPage()">
+                ONE LAST THING ❤️
+            </button>
+
+        </div>
+
+
+        <!-- FINAL PAGE -->
+
+        <div class="final-page" id="finalPage">
+
+            <div class="small-text">
+                HAPPY BIRTHDAY ❤️
+            </div>
+
+            <h1>
+                Hari 🎂
+            </h1>
+
+            <h2>
+                I love you. ❤️
+            </h2>
+
+            <p class="letter-text">
+
+                I'm really glad our paths crossed.
+
+                <br><br>
+
+                Here's to our memories,
+                our story,
+                and everything still waiting for us.
+
+                <br><br>
+
+                Happy Birthday to someone
+                who became very special to me. ✨
+
+            </p>
+
+            <button onclick="location.reload()">
+                READ AGAIN 🔄
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+    function openLetter() {
+
+        document.getElementById("startPage").style.display = "none";
+
+        document.getElementById("letter").style.display = "block";
+
+    }
+
+
+    function nextPage(pageNumber) {
+
+        const pages = document.querySelectorAll(".letter-page");
+
+        pages.forEach(function(page) {
+            page.classList.remove("active");
+        });
+
+        document.getElementById("page" + pageNumber)
+            .classList.add("active");
+
+    }
+
+
+    function showWhyYou() {
+
+        document.querySelectorAll(".letter-page")
+            .forEach(function(page) {
+                page.classList.remove("active");
+            });
+
+        document.getElementById("whyYou")
+            .classList.add("active");
+
+    }
+
+
+    function finalPage() {
+
+        document.getElementById("whyYou")
+            .classList.remove("active");
+
+        document.getElementById("finalPage")
+            .classList.add("active");
+
+    }
+
+</script>
+
+
+</body>
+</html>
